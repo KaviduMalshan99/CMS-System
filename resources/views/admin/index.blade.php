@@ -28,7 +28,7 @@
 @section('title', 'Default')
 
 @section('css')
-    
+
 @endsection
 
 @section('style')
@@ -51,14 +51,14 @@
 		<div class="card profile-box">
 		  <div class="card-body">
 			<div class="media">
-			  <div class="media-body"> 
+			  <div class="media-body">
 				<div class="greeting-user">
 				  <h4 class="f-w-600">Welcome to cuba</h4>
 				  <p>Here whats happing in your account today</p>
 				  <div class="whatsnew-btn"><a class="btn btn-outline-white">Whats New !</a></div>
 				</div>
 			  </div>
-			  <div>  
+			  <div>
 				<div class="clockbox">
 				  <svg id="clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
 					<g id="face">
@@ -87,11 +87,11 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="col-xxl-auto col-xl-3 col-sm-6 box-col-6"> 
-		<div class="row"> 
-		  <div class="col-xl-12"> 
+	  <div class="col-xxl-auto col-xl-3 col-sm-6 box-col-6">
+		<div class="row">
+		  <div class="col-xl-12">
 			<div class="card widget-1">
-			  <div class="card-body"> 
+			  <div class="card-body">
 				<div class="widget-content">
 				  <div class="widget-round secondary">
 					<div class="bg-round">
@@ -103,16 +103,16 @@
 					  </svg>
 					</div>
 				  </div>
-				  <div> 
+				  <div>
 					<h4>10,000</h4><span class="f-light">Purchase</span>
 				  </div>
 				</div>
 				<div class="font-secondary f-w-500"><i class="icon-arrow-up icon-rotate me-1"></i><span>+50%</span></div>
 			  </div>
 			</div>
-			<div class="col-xl-12"> 
+			<div class="col-xl-12">
 			  <div class="card widget-1">
-				<div class="card-body"> 
+				<div class="card-body">
 				  <div class="widget-content">
 					<div class="widget-round primary">
 					  <div class="bg-round">
@@ -124,7 +124,7 @@
 						</svg>
 					  </div>
 					</div>
-					<div> 
+					<div>
 					  <h4>4,200</h4><span class="f-light">Sales</span>
 					</div>
 				  </div>
@@ -135,11 +135,11 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="col-xxl-auto col-xl-3 col-sm-6 box-col-6"> 
-		<div class="row"> 
-		  <div class="col-xl-12"> 
+	  <div class="col-xxl-auto col-xl-3 col-sm-6 box-col-6">
+		<div class="row">
+		  <div class="col-xl-12">
 			<div class="card widget-1">
-			  <div class="card-body"> 
+			  <div class="card-body">
 				<div class="widget-content">
 				  <div class="widget-round warning">
 					<div class="bg-round">
@@ -151,16 +151,16 @@
 					  </svg>
 					</div>
 				  </div>
-				  <div> 
+				  <div>
 					<h4>7000</h4><span class="f-light">Sales return</span>
 				  </div>
 				</div>
 				<div class="font-warning f-w-500"><i class="icon-arrow-down icon-rotate me-1"></i><span>-20%</span></div>
 			  </div>
 			</div>
-			<div class="col-xl-12"> 
+			<div class="col-xl-12">
 			  <div class="card widget-1">
-				<div class="card-body"> 
+				<div class="card-body">
 				  <div class="widget-content">
 					<div class="widget-round success">
 					  <div class="bg-round">
@@ -172,7 +172,7 @@
 						</svg>
 					  </div>
 					</div>
-					<div> 
+					<div>
 					  <h4>5700</h4><span class="f-light">Purchase rate</span>
 					</div>
 				  </div>
@@ -184,14 +184,14 @@
 		</div>
 	  </div>
 	  <div class="col-xxl-auto col-xl-12 col-sm-6 box-col-6">
-		<div class="row"> 
+		<div class="row">
 		  <div class="col-xxl-12 col-xl-6 box-col-12">
 			<div class="card widget-1 widget-with-chart">
-			  <div class="card-body"> 
-				<div> 
+			  <div class="card-body">
+				<div>
 				  <h4 class="mb-1">1,80k</h4><span class="f-light">Orders</span>
 				</div>
-				<div class="order-chart"> 
+				<div class="order-chart">
 				  <div id="orderchart"></div>
 				</div>
 			  </div>
@@ -199,11 +199,11 @@
 		  </div>
 		  <div class="col-xxl-12 col-xl-6 box-col-12">
 			<div class="card widget-1 widget-with-chart">
-			  <div class="card-body"> 
-				<div> 
+			  <div class="card-body">
+				<div>
 				  <h4 class="mb-1">6,90k</h4><span class="f-light">Profit</span>
 				</div>
-				<div class="profit-chart"> 
+				<div class="profit-chart">
 				  <div id="profitchart"></div>
 				</div>
 			  </div>
@@ -213,17 +213,17 @@
 	  </div>
 	  <div class="col-xxl-8 col-lg-12 box-col-12">
 		<div class="card">
-		  <div class="card-header card-no-border"> 
+		  <div class="card-header card-no-border">
 			<h5>Overall balance</h5>
 		  </div>
 		  <div class="card-body pt-0">
 			<div class="row m-0 overall-card">
-			  <div class="col-xl-9 col-md-12 col-sm-7 p-0">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+			  <div class="col-xl-9 col-md-12 col-sm-7 p-0">
 				<div class="chart-right">
 				  <div class="row">
 					<div class="col-xl-12">
 					  <div class="card-body p-0">
-						<ul class="balance-data"> 
+						<ul class="balance-data">
 						  <li><span class="circle bg-warning"> </span><span class="f-light ms-1">Earning</span></li>
 						  <li><span class="circle bg-primary"> </span><span class="f-light ms-1">Expense</span></li>
 						</ul>
@@ -298,8 +298,8 @@
 		</div>
 	  </div>
 	  <div class="col-xxl-4 col-xl-7 col-md-6 col-sm-5 box-col-6">
-		<div class="card height-equal"> 
-		  <div class="card-header card-no-border"> 
+		<div class="card height-equal">
+		  <div class="card-header card-no-border">
 			<div class="header-top">
 			  <h5>Recent Orders</h5>
 			  <div class="card-header-right-icon">
@@ -313,11 +313,11 @@
 		  <div class="card-body pt-0">
 			<div class="row recent-wrapper">
 			  <div class="col-xl-6">
-				<div class="recent-chart"> 
+				<div class="recent-chart">
 				  <div id="recentchart"></div>
 				</div>
 			  </div>
-			  <div class="col-xl-6"> 
+			  <div class="col-xl-6">
 				<ul class="order-content">
 				  <li> <span class="recent-circle bg-primary"> </span>
 					<div> <span class="f-light f-w-500">Cancelled </span>
@@ -336,7 +336,7 @@
 		</div>
 	  </div>
 	  <div class="col-xxl-4 col-xl-5 col-md-6 col-sm-7 notification box-col-6">
-		<div class="card height-equal"> 
+		<div class="card height-equal">
 		  <div class="card-header card-no-border">
 			<div class="header-top">
 			  <h5 class="m-0">Activity</h5>
@@ -349,7 +349,7 @@
 			</div>
 		  </div>
 		  <div class="card-body pt-0">
-			<ul> 
+			<ul>
 			  <li class="d-flex">
 				<div class="activity-dot-primary"></div>
 				<div class="w-100 ms-3">
@@ -398,35 +398,35 @@
 				  <tbody>
 					<tr>
 					  <td><img class="img-fluid img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/1.jpg') }}" alt="user"></td>
-					  <td class="img-content-box"><a class="d-block f-w-500" href="{{ route('user-profile')}}">Jane Cooper</a><span class="f-light">10 minutes ago</span></td>
+					  <td class="img-content-box"><a class="d-block f-w-500" href="">Jane Cooper</a><span class="f-light">10 minutes ago</span></td>
 					  <td class="text-end">
 						<p class="m-0 font-success">$200.00</p>
 					  </td>
 					</tr>
 					<tr>
 					  <td><img class="img-fluid img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/2.jpg') }}" alt="user"></td>
-					  <td class="img-content-box"><a class="d-block f-w-500" href="{{ route('user-profile')}}">Brooklyn Simmons</a><span class="f-light">19 minutes ago</span></td>
+					  <td class="img-content-box"><a class="d-block f-w-500" href="">Brooklyn Simmons</a><span class="f-light">19 minutes ago</span></td>
 					  <td class="text-end">
 						<p class="m-0 font-success">$970.00</p>
 					  </td>
 					</tr>
 					<tr>
 					  <td><img class="img-fluid img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/3.jpg') }}" alt="user"></td>
-					  <td class="img-content-box"><a class="d-block f-w-500" href="{{ route('user-profile')}}">Leslie Alexander</a><span class="f-light">2 hours ago</span></td>
+					  <td class="img-content-box"><a class="d-block f-w-500" href="">Leslie Alexander</a><span class="f-light">2 hours ago</span></td>
 					  <td class="text-end">
 						<p class="m-0 font-success">$300.00</p>
 					  </td>
 					</tr>
 					<tr>
 					  <td><img class="img-fluid img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/4.jpg') }}" alt="user"></td>
-					  <td class="img-content-box"><a class="d-block f-w-500" href="{{ route('user-profile')}}">Travis Wright</a><span class="f-light">8 hours ago</span></td>
+					  <td class="img-content-box"><a class="d-block f-w-500" href="">Travis Wright</a><span class="f-light">8 hours ago</span></td>
 					  <td class="text-end">
 						<p class="m-0 font-success">$450.00</p>
 					  </td>
 					</tr>
 					<tr>
 					  <td><img class="img-fluid img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/5.jpg') }}" alt="user"></td>
-					  <td class="img-content-box"><a class="d-block f-w-500" href="{{ route('user-profile')}}">Mark Green</a><span class="f-light">1 day ago</span></td>
+					  <td class="img-content-box"><a class="d-block f-w-500" href="">Mark Green</a><span class="f-light">1 day ago</span></td>
 					  <td class="text-end">
 						<p class="m-0 font-success">$768.00</p>
 					  </td>
@@ -452,7 +452,7 @@
 			</div>
 		  </div>
 		  <div class="card-body pt-0">
-			<div class="schedule-container"> 
+			<div class="schedule-container">
 			  <div id="schedulechart"></div>
 			</div>
 		  </div>
@@ -460,14 +460,14 @@
 	  </div>
 	  <div class="col-xxl-3 col-md-6 box-col-6 col-ed-none wow zoomIn">
 		<div class="card purchase-card"><img class="img-fluid" src="{{ asset('assets/images/dashboard/purchase.png') }}" alt="vector mens with leptop">
-		  <div class="card-body pt-3"> 
+		  <div class="card-body pt-3">
 			<h6 class="mb-3">Buy <a href="#">Pro Account </a>to Explore Primium Features</h6><a class="purchase-btn btn btn-primary btn-hover-effect f-w-500" href="https://1.envato.market/3GVzd" target="_blank">Purchase Now</a>
 		  </div>
 		</div>
 	  </div>
-	  <div class="col-xxl-4 col-md-6 box-col-6 col-ed-6"> 
-		<div class="row"> 
-		  <div class="col-xl-12"> 
+	  <div class="col-xxl-4 col-md-6 box-col-6 col-ed-6">
+		<div class="row">
+		  <div class="col-xl-12">
 			<div class="card">
 			  <div class="card-header card-no-border">
 				<div class="header-top">
@@ -480,19 +480,19 @@
 			  </div>
 			  <div class="card-body pt-0">
 				<ul class="user-list">
-				  <li> 
+				  <li>
 					<div class="user-icon primary">
 					  <div class="user-box"><i class="font-primary" data-feather="user-plus"></i></div>
 					</div>
-					<div> 
+					<div>
 					  <h5 class="mb-1">178,098</h5><span class="font-primary d-flex align-items-center"><i class="icon-arrow-up icon-rotate me-1"> </i><span class="f-w-500">+30.89</span></span>
 					</div>
 				  </li>
-				  <li> 
+				  <li>
 					<div class="user-icon success">
 					  <div class="user-box"><i class="font-success" data-feather="user-minus"></i></div>
 					</div>
-					<div> 
+					<div>
 					  <h5 class="mb-1">178,098</h5><span class="font-danger d-flex align-items-center"><i class="icon-arrow-down icon-rotate me-1"></i><span class="f-w-500">-08.89</span></span>
 					</div>
 				  </li>
@@ -500,7 +500,7 @@
 			  </div>
 			</div>
 		  </div>
-		  <div class="col-xl-12"> 
+		  <div class="col-xl-12">
 			<div class="card growth-wrap">
 			  <div class="card-header card-no-border">
 				<div class="header-top">
@@ -520,10 +520,10 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="col-xxl-5 col-lg-8 col-md-11 box-col-8 col-ed-6"> 
+	  <div class="col-xxl-5 col-lg-8 col-md-11 box-col-8 col-ed-6">
 		<div class="card papernote-wrap">
 		  <div class="card-header card-no-border">
-			<div class="header-top"> 
+			<div class="header-top">
 			  <h5>PaperNote</h5><a class="f-light d-flex align-items-center" href="#">View project <i class="f-w-700 icon-arrow-top-right"></i></a>
 			</div>
 		  </div>
@@ -543,7 +543,7 @@
 			  </div>
 			  <div class="mt-sm-4 mt-2 user-details">
 				<div class="customers">
-				  <ul> 
+				  <ul>
 					<li class="d-inline-block"><img class="img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/1.jpg') }}" alt="user"></li>
 					<li class="d-inline-block"><img class="img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/6.jpg') }}" alt="user"></li>
 					<li class="d-inline-block"><img class="img-40 rounded-circle" src="{{ asset('assets/images/dashboard/user/7.jpg') }}" alt="user"></li>
@@ -554,7 +554,7 @@
 					</li>
 				  </ul>
 				</div>
-				<div class="d-flex align-items-center"> 
+				<div class="d-flex align-items-center">
 				  <h5 class="mb-0 font-primary f-18 me-1">$239,098</h5><span class="f-light f-w-500">(Budget)</span>
 				</div>
 			  </div>
