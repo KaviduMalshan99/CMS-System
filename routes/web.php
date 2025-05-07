@@ -1,47 +1,30 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-
-use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\UserProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/index', function () {
-    return view('admin.index');
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AuthController::class, 'admin'])->name('admin');
+    Route::get('/index', function () {
+        return view('admin.index');
+    })->name('index');
 });
 
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// Optional: Fallback route for undefined routes
+Route::fallback(function () {
+    return redirect('/')->with('error', 'Page not found.');
 });
-
-
-
-// Guest routes
-Route::middleware('guest')->group(function () {
-    Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
-    Route::post('login', [AuthenticatedSessionController::class, 'store']);
-});
-
-// Authenticated routes
-Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', [UserProfileController::class, 'index'])->name('user-profile');
-    Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
-});
-
-
-
-require __DIR__.'/auth.php';

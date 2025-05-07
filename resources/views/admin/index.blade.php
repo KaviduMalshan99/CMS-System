@@ -23,6 +23,16 @@
 
  --}}
 
+ <div class="container">
+    <h2>Admin Dashboard</h2>
+    <p>Welcome to the Admin Dashboard.</p>
+
+    <form action="{{ route('logout') }}" method="POST">
+        @csrf
+        <button type="submit">Logout</button>
+    </form>
+</div>
+
 @extends('AdminDashboard.master')
 
 @section('title', 'Default')
