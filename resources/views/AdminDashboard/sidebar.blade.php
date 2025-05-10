@@ -20,16 +20,16 @@
         <nav class="sidebar-main">
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
 
-            @if (Auth::check())
+            {{-- @if (Auth::check())
                 @php
                     $userType = Auth::user()->user_type;
                 @endphp
 
                 @if ($userType === 'User')
-                    {{-- Do not show anything --}}
+
                     <p>Please wait for SuperAdmin to grant permission.</p>
                 @elseif(in_array($userType, ['Admin', 'Cashier', 'SuperAdmin']))
-                    {{-- Show everything --}}
+
                     <p id="welcome-message" class="ps-5 my-5" style="display: none;">Welcome, {{ $userType }}. You
                         have access to all features.</p>
 
@@ -42,17 +42,17 @@
                         });
                     </script>
 
-                    {{-- Add your content here --}}
+
 
                     <script>
-                        // Hide the welcome message after 10 seconds
+
                         setTimeout(() => {
                             const message = document.getElementById('welcome-message');
                             if (message) {
                                 message.style.display = 'none';
                             }
-                        }, 10000); // 10000 milliseconds = 10 seconds
-                    </script>
+                        }, 10000);
+                    </script> --}}
 
                     <div id="sidebar-menu">
                         <ul class="sidebar-links" id="simple-bar">
@@ -104,9 +104,9 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-user') }}"></use>
                                     </svg><span>Customers</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('customers.create') }}">Add Customer</a></li>
+                                    <li><a href="">Add Customer</a></li>
                                     <li><a
-                                            href="{{ request()->query('ref') === 'view' ? route('customers.show', $customer->id) : route('customers.index') }}">View
+                                            href="">View
                                             Customer</a></li>
 
                                 </ul>
@@ -127,9 +127,9 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-user') }}"></use>
                                     </svg><span>Supplier</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('suppliers.create') }}">Add Supplier</a></li>
+                                    <li><a href="">Add Supplier</a></li>
                                     <li><a
-                                            href="{{ request()->query('ref') === 'view' ? route('suppliers.show', $customer->id) : route('suppliers.index') }}">View
+                                            href="">View
                                             Supplier</a></li>
 
                                 </ul>
@@ -149,10 +149,10 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-ecommerce') }}"></use>
                                     </svg><span>Purchase</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('purchases.create_battery') }}">Add New Battery Purchase</a>
+                                    <li><a href="">Add New Battery Purchase</a>
                                     </li>
                                     <li><a
-                                            href="{{ request()->query('ref') === 'view' ? route('purchases.show', $purchase->id) : route('purchases.index') }}">View
+                                            href="">View
                                             Battery Purchase</a></li>
 
                                 </ul>
@@ -175,9 +175,9 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-ecommerce') }}"></use>
                                     </svg><span>Repair</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('repairs.create') }}">Add New Repair Battery</a></li>
+                                    <li><a href="">Add New Repair Battery</a></li>
                                     <li><a
-                                            href="{{ request()->query('ref') === 'view' ? route('repairs.show', $repair->id) : route('repairs.index') }}">View
+                                            href="">View
                                             Repair Battery</a></li>
 
                                 </ul>
@@ -200,9 +200,9 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-ecommerce') }}"></use>
                                     </svg><span>Old Battery</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('oldBatteries.create') }}">Add New Old Battery</a></li>
+                                    <li><a href="">Add New Old Battery</a></li>
                                     <li><a
-                                            href="{{ request()->query('ref') === 'view' ? route('oldBatteries.show', $oldBattery->id) : route('oldBatteries.index') }}">View
+                                            href="">View
                                             Old Battery</a></li>
 
                                 </ul>
@@ -224,9 +224,9 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-ecommerce') }}"></use>
                                     </svg><span>Rental</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('rentals.create') }}">Add New Rental</a></li>
+                                    <li><a href="">Add New Rental</a></li>
                                     <li><a
-                                            href="{{ request()->query('ref') === 'view' ? route('rentals.show', $rental->id) : route('rentals.index') }}">View
+                                            href="">View
                                             Rental</a></li>
 
                                 </ul>
@@ -252,8 +252,8 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-ecommerce') }}"></use>
                                     </svg><span>POS</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('POS.index') }}">Battery POS</a></li>
-                                    <li><a href="{{ route('POS.lubricant') }}">Lubricant POS</a></li>
+                                    <li><a href="">Battery POS</a></li>
+                                    <li><a href="">Lubricant POS</a></li>
                                     {{-- <li><a
                             href="{{ request()->query('ref') === 'view' ? route('rentals.show', $rental->id) : route('rentals.index') }}">View
                             Rental</a></li> --}}
@@ -278,10 +278,10 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-ecommerce') }}"></use>
                                     </svg><span>Reports</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a href="{{ route('reports.IncomesIndex') }}">Income Report</a>
+                                    <li><a href="">Income Report</a>
                                         {{-- <li><a href="{{ route('reports.incomeIndex') }}">Income Report</a> --}}
                                     </li>
-                                    <li><a href="{{ route('reports.customerIndex') }}">Customer Report</a></li>
+                                    {{-- <li><a href="{{ route('reports.customerIndex') }}">Customer Report</a></li>
                                     <li><a href="{{ route('reports.supplierIndex') }}">Supplier Report</a></li>
                                     <li><a href="{{ route('reports.batteryPurchaseIndex') }}">Battery Purchase
                                             Report</a></li>
@@ -303,12 +303,12 @@
                                     </li>
                                     <li><a href="{{ route('reports.replacementOrderIndex') }}">Replacement Report</a>
                                     <li><a href="{{ route('adminregistration') }}">Admin Registration</a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </li>
 
                             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
-                                    class="sidebar-link sidebar-title" href="{{ route('history.index') }}">
+                                    class="sidebar-link sidebar-title" href="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round">
@@ -348,8 +348,8 @@
                                     <li><a class="submenu-title" href="#">Company<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
                                         <ul class="nav-sub-childmenu submenu-content">
-                                            <li><a href="{{ route('company.create') }}">Add Comapany Details</a></li>
-                                            <li><a href="{{ route('company.index') }}">View Company</a></li>
+                                            {{-- <li><a href="{{ route('company.create') }}">Add Comapany Details</a></li>
+                                            <li><a href="{{ route('company.index') }}">View Company</a></li> --}}
 
 
                                         </ul>
@@ -358,8 +358,8 @@
                                     <li><a class="submenu-title" href="#">Tax<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
                                         <ul class="nav-sub-childmenu submenu-content">
-                                            <li><a href="{{ route('tax.create') }}">Add Tax</a></li>
-                                            <li><a href="{{ route('tax.index') }}">View Tax </a></li>
+                                            {{-- <li><a href="{{ route('tax.create') }}">Add Tax</a></li>
+                                            <li><a href="{{ route('tax.index') }}">View Tax </a></li> --}}
 
 
                                         </ul>
@@ -389,8 +389,8 @@
                                     </svg><span>Brand</span></a>
                                 <ul class="sidebar-submenu">
 
-                                    <li><a href="{{ route('brand.create') }}">Add Brand </a></li>
-                                    <li><a href="{{ route('brand.index') }}">View Brand</a></li>
+                                    {{-- <li><a href="{{ route('brand.create') }}">Add Brand </a></li>
+                                    <li><a href="{{ route('brand.index') }}">View Brand</a></li> --}}
 
                                 </ul>
                             </li>
@@ -413,12 +413,12 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-form') }}"> </use>
                                     </svg><span>Battery</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a class="submenu-title" href="{{ route('batteries.create') }}">Add
+                                    <li><a class="submenu-title" href="">Add
                                             Battery<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
 
                                     </li>
-                                    <li><a class="submenu-title" href="{{ route('batteries.index') }}">View
+                                    <li><a class="submenu-title" href="">View
                                             Battery<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
 
@@ -426,8 +426,8 @@
                                     <li><a class="submenu-title" href="#">Brand<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
                                         <ul class="nav-sub-childmenu submenu-content">
-                                            <li><a href="{{ route('brand.index') }}">View Brand</a></li>
-                                            <li><a href="{{ route('brand.create') }}">Add Brand </a></li>
+                                            {{-- <li><a href="{{ route('brand.index') }}">View Brand</a></li>
+                                            <li><a href="{{ route('brand.create') }}">Add Brand </a></li> --}}
 
 
                                         </ul>
@@ -453,18 +453,18 @@
                                         <use href="{{ asset('assets/svg/icon-sprite.svg#fill-table') }}"></use>
                                     </svg><span>Lubricant</span></a>
                                 <ul class="sidebar-submenu">
-                                    <li><a class="submenu-title" href="{{ route('lubricants.create') }}">Add
+                                    <li><a class="submenu-title" href="">Add
                                             Lubricant<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
 
                                     </li>
-                                    <li><a class="submenu-title" href="{{ route('lubricants.index') }}"> View
+                                    <li><a class="submenu-title" href=""> View
                                             Lubricant<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
 
                                     </li>
 
-                                    <li><a class="submenu-title" href="{{ route('lubricant_purchases.index') }}">
+                                    <li><a class="submenu-title" href="">
                                             View
                                             purchases<span class="sub-arrow"><i
                                                     class="fa fa-angle-right"></i></span></a>
@@ -497,13 +497,13 @@
                             <br />
                         </ul>
                     </div>
-                @else
-                    {{-- Fallback for unexpected user_type --}}
+                {{-- @else
+
                     <p>Unauthorized access.</p>
                 @endif
             @else
                 <p>You need to log in to access this page.</p>
-            @endif
+            @endif --}}
 
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
         </nav>
