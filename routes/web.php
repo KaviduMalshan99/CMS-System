@@ -3,9 +3,13 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
+
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+
+
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
@@ -25,6 +29,6 @@ Route::middleware(['auth'])->group(function () {
 
 
 // Optional: Fallback route for undefined routes
-Route::fallback(function () {
-    return redirect('/')->with('error', 'Page not found.');
-});
+// Route::fallback(function () {
+//     return redirect('/')->with('error', 'Page not found.');
+// });

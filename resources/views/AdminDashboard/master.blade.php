@@ -23,6 +23,8 @@
                 href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap"
                 rel="stylesheet">
 
+                <link rel="stylesheet" href="{ asset('assets\scss\app.scss') }">
+
             <!-- Report-->
             <!-- jQuery -->
             <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -48,7 +50,7 @@
             @yield('style')
         </head>
 
-        
+
 
         <body onload="startTime()">
             @if (Route::current()->getName() == 'index')
@@ -89,7 +91,7 @@
                                     </div>
                                     <div class="col-6">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="{{ route('/') }}">
+                                            <li class="breadcrumb-item"><a href="">
                                                     <svg class="stroke-icon">
                                                         <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-home') }}">
                                                         </use>

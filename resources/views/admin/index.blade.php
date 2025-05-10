@@ -23,7 +23,7 @@
 
  --}}
 
- <div class="container">
+ {{-- <div class="container">
     <h2>Admin Dashboard</h2>
     <p>Welcome to the Admin Dashboard.</p>
 
@@ -31,7 +31,7 @@
         @csrf
         <button type="submit">Logout</button>
     </form>
-</div>
+</div> --}}
 
 @extends('AdminDashboard.master')
 

@@ -1,3 +1,8 @@
+
+
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+
 <!-- Page Header Start-->
 <div class="page-header">
     <div class="header-wrapper row m-0">
@@ -15,7 +20,7 @@
             </div>
         </form>
         <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href="{{ route('index') }}">
+            <div class="logo-wrapper"><a href="">
                     <img class="img-fluid" src="{{ asset('assets/images/logo/user.png') }}" alt="">
                 </a></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
