@@ -23,6 +23,33 @@
                 href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap"
                 rel="stylesheet">
 
+
+
+                {{-- <link rel="stylesheet" href="{{ asset('assets/css/test.css') }}"> --}}
+                <!-- Icons -->
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/icofont.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/themify.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/flag-icon.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/feather-icon.css') }}">
+
+<!-- Plugins -->
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/slick.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/slick-theme.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/scrollbar.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/animate.css') }}">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="{{ asset('assets/css/vendors/bootstrap.css') }}">
+
+<!-- App Style -->
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<link id="color" rel="stylesheet" href="{{ asset('assets/css/color-1.css') }}" media="screen">
+
+<!-- Responsive -->
+<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+
+
+
             <!-- Report-->
             <!-- jQuery -->
             <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -48,7 +75,7 @@
             @yield('style')
         </head>
 
-        
+
 
         <body onload="startTime()">
             @if (Route::current()->getName() == 'index')
@@ -75,6 +102,7 @@
             <!-- page-wrapper Start-->
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
 
+
                 @include('AdminDashboard.header')
                 <!-- Page Body Start-->
                 <div class="page-body-wrapper">
@@ -89,7 +117,7 @@
                                     </div>
                                     <div class="col-6">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="{{ route('/') }}">
+                                            <li class="breadcrumb-item"><a href="">
                                                     <svg class="stroke-icon">
                                                         <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-home') }}">
                                                         </use>
